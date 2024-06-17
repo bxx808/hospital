@@ -1,0 +1,68 @@
+.sidebar {
+    min-height: 700px;
+}
+
+.sidebar span {
+    display: block;
+    text-align: center;
+    background-color: #c5c5c5;
+    padding: 5px 0;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 0;
+    color: black;
+}
+
+.sidebar a:hover {
+    background-color: #e5e5e5;
+}
+
+.auth_block {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.head_card {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.patient_input {
+    color: white !important;
+    background-color: transparent !important;
+}
+
+.function_btn {
+    display: flex;
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    color: #fff;
+    gap: 10px;
+}
+
+.function_btn .delet_btn {
+    color: #d63031;
+    border: none;
+    background: none;
+}
+
+.function_btn .edit_btn {
+    color: #fdcb6e;
+}
+
+.function_btn .recovery_btn{
+    color: #6ab04c;
+    border: none;
+    background: none;
+}
+
+.page_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
