@@ -3,7 +3,7 @@ require_once "layout/head.php";
 ?>
 <div class="reception">
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addReception">
-        Launch demo modal
+       Создать прием
     </button>
     <div class="modal" tabindex="-1" id="addReception">
         <div class="modal-dialog">
