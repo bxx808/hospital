@@ -13,7 +13,7 @@ if((bool)$_GET['searchLogin']){
 }
 $query = $pdo->prepare($sql);
 $query->execute($data);
-$admins = $query->fetchAll(PDO::FETCH_ASSOC);
+$admins = $query->fetchAll(PDO::FETCH_ASSOC); 
 
 
 
