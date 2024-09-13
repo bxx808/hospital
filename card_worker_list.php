@@ -61,6 +61,7 @@ require_once "layout/head.php";
             <?php foreach ($admins as $admin): ?>
                 <tr>
                     <th scope="row"><?= $admin['id'] ?></th>
+                    <td><?= $admin['name'] ?></td>
                     <td><?= $admin['login'] ?></td>
                     <td><?= $admin['password'] ?></td>
                     <td><?= $admin['role'] ?></td>

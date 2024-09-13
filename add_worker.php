@@ -14,6 +14,10 @@ require_once "layout/head.php";
           <div class="">
             <h5 class="card-title">Сотрудник</h5>
             <div class="mb-3">
+              <input type="text" class="form-control" id="inputFirstName" placeholder="ФИО" name="name"
+                required>
+            </div>
+            <div class="mb-3">
               <input type="text" class="form-control" id="inputFirstName" placeholder="Логин" name="login"
                 required>
             </div>
