@@ -7,7 +7,7 @@ try {
     $query->execute();
     $patients = $query->fetchAll(PDO::FETCH_ASSOC);
 
-    $sql = "SELECT admins.name, position.position FROM admins JOIN admins_to_positions ON admins.id = admins_to_positions.admin_id JOIN position ON admins_to_positions.position_id = position.id WHERE admins.role = 'doctor' ORDER BY position.position ASC  ";
+    $sql = "SELECT admins.name, position.position, admins.id FROM admins JOIN admins_to_positions ON admins.id = admins_to_positions.admin_id JOIN position ON admins_to_positions.position_id = position.id WHERE admins.role = 'doctor' ORDER BY position.position ASC  ";
     $query = $pdo->prepare($sql);
     $query->execute();
     $doctors = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -49,6 +49,8 @@ require_once "layout/head.php";
                             <input type="date" class="form-control" name="date">
                             <label for="">Причина обращения</label>
                             <textarea name="reason" id="" cols="30" rows="10" class="form-control"></textarea>
+                            <div class="alert d-none" role="alert" id="alert">
+                            </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>

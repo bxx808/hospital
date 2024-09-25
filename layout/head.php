@@ -113,7 +113,11 @@ session_start();
                                     </span>
                                     <a href="add_worker.php">
                                         <i class="fa-solid fa-plus"></i>
-                                        Добавить сотрудинка
+                                        Добавить регистратора
+                                    </a>
+                                    <a href="add_doctor.php">
+                                        <i class="fa-solid fa-plus"></i>
+                                        Добавить доктора
                                     </a>
                                     <a href="card_worker_list.php">
                                         <i class="fa-solid fa-address-card"></i>
